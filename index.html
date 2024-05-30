@@ -36,11 +36,12 @@
     <!-- FUNCTION DOWNLOAD -->
     async function downloadVideo() {
         	let videoUrl = document.getElementById("videoUrl").value;
-        	const response = await fetch(`https://skizo.tech/api/tiktok?apikey=YOUR_KEY&url=${videoUrl}`);
+        	const response = await fetch(`https://skizo.tech/api/tiktok?apikey=nana&url=${videoUrl}`);
             const data = await response.json()
             const resultUrl = data.data.play;
-            window.open(resultUrl, '_blank');
-        }
+    }
+	    <iframe src="${resultUrl}" style="width: 100%; height: 600px; border: none;"></iframe>
+		    
     </script>
     </div>
     </div>
