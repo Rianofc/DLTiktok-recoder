@@ -13,7 +13,7 @@ const results = data.result
         if (results.success) {
             const downloadLink = document.createElement('a');
             downloadLink.href = results.no_watermark;
-            downloadLink.download = 'tiktok_video.mp4';
+            downloadLink.download = results.no_watermark;
             downloadLink.innerText = 'Klik di sini untuk mengunduh video';
             document.getElementById('result').innerHTML = '';
             document.getElementById('result').appendChild(downloadLink);
